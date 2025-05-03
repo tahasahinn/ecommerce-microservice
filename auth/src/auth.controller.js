@@ -1,7 +1,7 @@
 const { loginSchema, registerSchema, validateDto } = require("./auth.dto");
 const AuthService = require("./auth.service");
 
-class AuthController {
+class AuthController {a
   async register(req, res, next) {
     try {
       const value = await validateDto(registerSchema, req.body);
